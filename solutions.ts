@@ -51,19 +51,19 @@ class Employee {
     this.baseSalary = baseSalary;
   }
   getDetails(): string {
-    return `Employee: ${this.name},Base Salay: ${this.baseSalary}`;
+    return `Employee: ${this.name}, Base Salary: ${this.baseSalary}`;
   }
 }
 
 class Manager extends Employee {
   private department: string;
 
-  constructor(name: string, baseSalary: number, departmant: string) {
+  constructor(name: string, baseSalary: number, department: string) {
     super(name, baseSalary);
-    this.department = departmant;
+    this.department = department;
   }
   getRoleInfo(): string {
-    return `Manager of ${this.department}:${this.name}`;
+    return `Manager of ${this.department}: ${this.name}`;
   }
 }
 
@@ -74,7 +74,7 @@ function validateAgeAsync(age: number): Promise<string> {
         resolve("Access Granted");
       }, 1000);
     } else {
-      reject(new Error("Access Denied:Must be 18 or older"));
+      reject(new Error("Access Denied: Must be 18 or older"));
     }
   });
 }
