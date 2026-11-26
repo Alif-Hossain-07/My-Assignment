@@ -6,11 +6,14 @@ TypeScript- এ type এবং interface দুটি গুরুত্বপ�
  
 বিস্তারিত আলোচনা => 
  
-Type Alias : type ব্যবহার করে বিভিন্ন ধরনের ডেটার জন্য    নতুন নাম তৈরি করা যায়। যেমনঃ Object,primitive, Union,   Intersection & tuple type তৈরিতে ব্যবহার করা যায়। 
+Type Alias :
+
+ type ব্যবহার করে বিভিন্ন ধরনের ডেটার জন্য নতুন নাম তৈরি করা যায়। যেমনঃ Object,primitive, Union,   Intersection & tuple type তৈরিতে ব্যবহার করা যায়। 
 
  Interface : interface মূলত Object এর Structure নির্ধারণ করতে ব্যবহৃত হয় । interface এ extends,Declaration Margine সুবিধা রয়েছে।
   
   Type এবং Interface এর পার্থক্য ঃ
+
   1) Type দিয়ে Primitive,Union,intersection তৈরি করা যায়, কিন্তু interface সরাসরি primitive বা Union alias তৈরি করতে পারে না।
   2) interface-এ extends ব্যবহার করে অন্য interface সম্প্রসারণ করা যায়। অন্যদিকে,type- এ & ব্যবহার করে intersection তৈরি করা হয়।
   3) interface-এর Declearation Merging সুবিধা রয়েছে ,কিন্তু type এ একই নামে পুনরায় Declaration করা যায় না ।
@@ -18,7 +21,9 @@ Type Alias : type ব্যবহার করে বিভিন্ন ধর�
   5) উভয়কেই class-এর সঙ্গে implement ব্যবহার করে প্রয়োগ করা যায়।
 
 Type Alias :
+
 উদহারনঃ 
+
  Object type ->
 
  type Student = {
@@ -57,6 +62,7 @@ Type Alias :
     const user : UserInfo = ["ALIF",25,true];
                     
 Interface :
+
     উদহারনঃ 
     Extends -->
      interface person {
@@ -82,8 +88,7 @@ Interface :
         studentId:101
       };
 
- উপসংহার ঃ সবশেষে বলা যায়, উভয়ই typeScript এর গুরুত্বপূর্ণ অংশ। Object এর Structure এবং Extends এর জন্য interface ভালো পছন্দ । অন্যদিকে Union , intersection এবং জটিল type তৈরির জন্য type বেশি উপযোগী। 
+ উপসংহার ঃ
+ 
+ সবশেষে বলা যায়, উভয়ই typeScript এর গুরুত্বপূর্ণ অংশ। Object এর Structure এবং Extends এর জন্য interface ভালো পছন্দ । অন্যদিকে Union , intersection এবং জটিল type তৈরির জন্য type বেশি উপযোগী। 
   কাজের প্রয়োজন অনুযায়ী সঠিকটি নির্বাচন করাই একজন ভালো ডেভেলপারের দক্ষতা ।
-
-
-    
