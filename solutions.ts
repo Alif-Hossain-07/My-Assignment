@@ -67,8 +67,8 @@ class Manager extends Employee {
   }
 }
 
-function validateAgeAsync(age: number): Promise<string> {
-  return new Promise((resolve, reject) => {
+async function validateAgeAsync(age: number): Promise<string> {
+  return new Promise<string>((resolve, reject) => {
     if (age >= 18) {
       setTimeout(() => {
         resolve("Access Granted");
